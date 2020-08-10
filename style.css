@@ -1,0 +1,60 @@
+.formcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px auto;
+    border: 2px solid black;
+    height: 90vh;
+    align-items: start;
+    gap: 20px;
+
+}
+
+legend {
+    font-size: 1.2em;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    grid-column: span 2;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+#fieldsetleft {
+    margin-left: 15px;
+}
+
+#fieldsetright {
+    margin-right: 15px;
+}
+
+fieldset > label {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+
+fieldset > input, fieldset > div, fieldset > textarea {
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border-radius: 1em;
+    height: 40px;
+    margin-top: 15px;
+}
