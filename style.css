@@ -1,12 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .formcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px auto;
     border: 2px solid black;
-    height: 90vh;
+    height: 100vh;
     align-items: start;
     gap: 20px;
-
 }
 
 legend {
@@ -17,19 +22,20 @@ legend {
 
 header {
     display: flex;
-    background-color: black;
     grid-column: span 2;
-    color: white;
-    font-weight: bold;
     align-items: center;
     height: 100%;
-    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
     padding: 20px;
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 #fieldsetleft {
@@ -45,8 +51,10 @@ fieldset > label {
     padding-top: 10px;
 }
 
-
-fieldset > input, fieldset > div, fieldset > textarea {
+fieldset > input, 
+fieldset > div, 
+fieldset > textarea, 
+#category {
     margin: 5px 0px 5px 0px;
     width: 100%;
 }
@@ -57,4 +65,11 @@ button {
     border-radius: 1em;
     height: 40px;
     margin-top: 15px;
+    padding: 5px;
+    border: 0;
 }
+
+#fieldsetright > div > input {
+    margin-right: 10px;
+}
+
